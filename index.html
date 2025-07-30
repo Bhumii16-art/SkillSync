@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillSync — Portfolio + Resume Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <div class="left">
+        <h1 class="main-title">
+          <span class="skill">Skill</span><span class="sync">Sync</span>
+          <span class="subtitle">Portfolio + Resume Builder</span>
+        </h1>
+      </div>
+      <div class="right">
+        <button id="toggleTheme" class="theme-toggle">🌙 Toggle Theme</button>
+      </div>
+    </div>
+
+    <ul class="project-points">
+      <li>Built an interactive web app for designing professional portfolios and resumes with live preview and downloadable templates.</li>
+      <li>Integrated theme switcher (dark/light mode), drag-and-drop resume sections, and responsive Tailwind-based UI.</li>
+    </ul>
+
+    <div class="builder-section">
+      <div class="builder-layout">
+        <div class="edit-section">
+          <h2>Edit Your Resume</h2>
+          <textarea id="resumeInput" placeholder="Type your resume content here..."></textarea>
+          <div class="action-buttons">
+            <button onclick="download()" class="download-btn">📄 Download as Text</button>
+          </div>
+        </div>
+        
+        <div class="preview-section">
+          <h2>Live Preview</h2>
+          <div id="previewBox"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
